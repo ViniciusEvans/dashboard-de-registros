@@ -1,0 +1,67 @@
+.master-registro {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    .registro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        color: black;
+        background-color: #FFF;
+        padding: 30px 20px;
+        border-radius: 8px;
+        h2 {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+        }
+        input {
+            all: unset;
+            background: #FDFAFA;
+            margin: 16px 0px;
+            padding: 16px;
+            border: 1px #E8E8E8 solid;
+            &:focus-visible {
+                border: 1px rgba(0, 0, 255, 0.5) solid;
+            }
+        }
+        .btn {
+            all: unset;
+            padding: 16px;
+            text-align: center;
+            color: #fff;
+            border-radius: 8px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .btn-confirm {
+            background: rgba(4, 196, 92, 1);
+            margin-bottom: 10px;
+            &:hover {
+                transition: 0.2s;
+                background: rgba(3, 131, 63, 0.65);
+                cursor: pointer;
+            }
+            &:active {
+                background: rgba(12, 106, 56, 0.65);
+            }
+        }
+        .btn-cancel {
+            background: rgba(251, 6, 21, 0.65);
+            &:hover {
+                transition: 0.2s;
+                background: rgba(121, 20, 27, 0.65);
+                cursor: pointer;
+            }
+            &:active {
+                background: rgba(85, 12, 17, 0.65);
+            }
+        }
+    }
+}

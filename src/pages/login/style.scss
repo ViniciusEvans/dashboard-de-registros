@@ -1,0 +1,50 @@
+$text-color: black;
+$primary-color: #0b6a37;
+$secondary-color: #FFF;
+$thrid-color: #04C45C;
+.masterLogin {
+    min-height: 100vh;
+    display: flex;
+    .login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        color: $text-color;
+        background-color: $secondary-color;
+        padding: 30px 20px;
+        border-radius: 8px;
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input {
+            all: unset;
+            background: #FDFAFA;
+            margin: 16px 0px;
+            padding: 16px;
+            border: 1px #E8E8E8 solid;
+        }
+        .button {
+            all: unset;
+            background-color: #04C45C;
+            padding: 16px;
+            text-align: center;
+            color: #fff;
+            border-radius: 8px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 14px;
+            &:hover {
+                transition: 0.2s;
+                cursor: pointer;
+                background: #0dd068;
+            }
+            &:active {
+                transition: 0.2s;
+                background: rgba(12, 106, 56, 0.65);
+            }
+        }
+    }
+}

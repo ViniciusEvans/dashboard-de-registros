@@ -1,0 +1,64 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba($color: #000000, $alpha: .5);
+    .card-modal {
+        width: 30%;
+        background: #FFFDFD;
+        border-radius: 8px;
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 30px 55px 70px 55px;
+            img {
+                width: 20px;
+                margin-left: 100%;
+                padding: 10px;
+                cursor: pointer;
+            }
+            h2 {
+                text-align: center;
+                margin-top: 0;
+            }
+            input {
+                all: unset;
+                background: #FDFAFA;
+                padding: 20px;
+                border: 1px #E8E8E8 solid;
+                margin-bottom: 15px;
+            }
+            button {
+                all: unset;
+                height: 50px;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 14px;
+                letter-spacing: -1px;
+                color: #ffff;
+                border-radius: 8px;
+                cursor: pointer;
+                &:hover {
+                    opacity: .8;
+                }
+                &:active {
+                    filter: brightness(.8);
+                }
+            }
+            .btn-one {
+                background: #04C45C;
+                margin-bottom: 10px;
+                margin-top: 80px;
+            }
+            .btn-two {
+                background: #FB0615A6;
+            }
+        }
+    }
+}
